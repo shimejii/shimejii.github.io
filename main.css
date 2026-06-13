@@ -1,0 +1,215 @@
+:root {
+    /* --primary: #4f46e5; */
+    --primary: #28A8D3;
+    --brand-50: #eaf6fb;
+    --brand-100: #bce4f1;
+    --brand-200: #9cd7eb;
+    --brand-300: #6fc5e2;
+    --brand-400: #53b9dc;
+    --brand-500: #28a8d3;
+    --brand-600: #2499c0;
+    --brand-700: #1c7796;
+    --brand-800: #165c74;
+    --brand-900: #114759;
+
+    --neutral-50: #ebeded;
+    --neutral-100: #c1c6c7;
+    --neutral-200: #a3aaac;
+    --neutral-300: #798386;
+    --neutral-400: #5f6b6f;
+    --neutral-500: #37464b;
+    --neutral-600: #324044;
+    --neutral-700: #273235;
+    --neutral-800: #1e2729;
+    --neutral-900: #171d20;
+
+    --success-50: #edfbea;
+    --success-100: #c8f1bc;
+    --success-200: #adeb9c;
+    --success-300: #88e26f;
+    --success-400: #71dc53;
+    --success-500: #4dd328;
+    --success-600: #46c024;
+    --success-700: #37961c;
+    --success-800: #2a7416;
+    --success-900: #205911;
+
+    --warning-50: #fafbea;
+    --warinig-100: #f0f1bc;
+    --warinig-200: #e8eb9c;
+    --warning-300: #dee26f;
+    --warning-400: #d8dc53;
+    --warning-500: #ced328;
+    --warning-600: #bbc024;
+    --warning-700: #92961c;
+    --warning-800: #717416;
+    --warning-900: #575911;
+
+    --info-50: #eaf6fb;
+    --info-100: #bce4f1;
+    --info-200: #9cd7eb;
+    --info-300: #6fc5e2;
+    --info-400: #53b9dc;
+    --info-500: #28a8d3;
+    --info-600: #2499c0;
+    --info-700: #1c7796;
+    --info-800: #165c74;
+    --info-900: #114759;
+
+    --error-50: #fbeaea;
+    --error-100: #f1bcbc;
+    --error-200: #eb9c9c;
+    --error-300: #e26f6f;
+    --error-400: #dc5353;
+    --error-500: #d32828;
+    --error-600: #c02424;
+    --error-700: #961c1c;
+    --error-800: #741616;
+    --error-900: #591111;
+
+    --background: var(--neutral-50);
+    --backgroud-h2: var(--neutral-50);
+    --character-black: var(--neutral-500);
+    --character-white: var(--neutral-50);
+    --button: var(--brand-500);
+    --button-success: var(--success-500);
+    --card: var(--brand-100);
+    --card-success: var(--success-100);
+    --radio-btn: var(--brand-300);
+    --radio-btn-success: var(--success-300);
+    --radio-btn-character: var(--neutral-500);
+    font-family: "やさしさゴシック", sans-serif;
+}
+
+
+button:hover {
+    background-color: var(--success-500);
+    transition-duration: 0.4s;
+}
+
+.btn {
+    margin-bottom: 20px;
+}
+
+.circle-select {
+  width: 130px;
+  height: 20px;
+
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  display: flex;
+  font-size: 10px;
+  background-color: var(--radio-btn);
+  color: var(--radio-btn-character);
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+.circle-select input {
+    display: none;
+}
+
+
+.circle-select label {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+/* .circle-select label:hover {
+    background-color: var(--button-success);
+} */
+
+.circle-select input:checked + label {
+    background-color: var(--radio-btn-success);
+}
+
+body {
+    color: var(--character);
+    background-color: var(--background);
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    background-color: var(--backgroud-h2);
+    border-left: 10px solid var(--brand-500);
+}
+
+header {
+    border-bottom: 20px double var(--brand-400);
+}
+
+.profile-img {
+    margin-right : 20px;
+}
+
+section {
+        border-radius: 12px;
+        margin-top: 50px;
+}
+
+.card {
+    width: 120px;
+    height: 160px;
+    background: var(--card);
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+    font-size: 12px;
+    border-radius: 12px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    background-color: var(--card-success);
+}
+
+.certification {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+.date-label {
+    background: #dee3e9;
+    border-radius: 12px;
+}
+
+.yazirushi {
+  position: relative;
+  width: 300px;
+  margin: 20px;
+}
+
+.line01 {
+  height: 5px;
+  background-color: var(--brand-500);
+}
+
+.line02 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform-origin: right bottom;
+  width: 30px;
+  height: 5px;
+  background-color: var(--brand-500);
+  transform: rotate(45deg);
+}
+
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 30px;
+    border: 5px solid var(--brand-500);
+}
