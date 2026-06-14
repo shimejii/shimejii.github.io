@@ -76,9 +76,8 @@
     --backgroud-h2: var(--neutral-50);
     --character-black: var(--neutral-500);
     --character-white: var(--neutral-50);
-    --button: var(--brand-500);
-    --button-success: var(--success-500);
     --card: var(--brand-100);
+    --card-border: var(--brand-500);
     --card-success: var(--success-100);
     --radio-btn: var(--brand-300);
     --radio-btn-success: var(--success-300);
@@ -114,10 +113,6 @@
     align-items: center;
     border-radius: 20px;
 }
-
-/* .circle-select label:hover {
-    background-color: var(--button-success);
-} */
 
 .circle-select input:checked + label {
     background-color: var(--radio-btn-success);
@@ -164,6 +159,7 @@ section {
     transition-timing-function: ease-out;
     font-size: 12px;
     border-radius: 12px;
+    border: solid 1px var(--card-border);
 }
 
 .card:hover {
@@ -175,6 +171,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    padding-left: 20px;
 }
 
 
